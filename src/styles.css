@@ -1,5 +1,7 @@
-body {
-  margin-top: 100px;
+:root {
+  --main-color: orange;
+  --text-color: white;
+  --background-color: black;
 }
 
 h1 {
@@ -8,6 +10,16 @@ h1 {
 
 h2 {
   font-size: 48px;
+}
+.hero {
+  background-color: var(--background-color);
+  height: 100vh;
+  padding-top: 100px;
+  padding-left: 60px;
+  color: var(--text-color);
+}
+.name {
+  color: var(--main-color);
 }
 @media (max-width: 640px) {
   h1 {
