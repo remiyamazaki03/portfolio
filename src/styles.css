@@ -1,6 +1,6 @@
 :root {
   --main-color: orange;
-  --text-color: white;
+  --secondary-color: white;
   --background-color: black;
 }
 
@@ -16,18 +16,31 @@ h2 {
   height: 100vh;
   padding-top: 100px;
   padding-left: 60px;
-  color: var(--text-color);
+  color: var(--secondary-color);
+  background-image: url(/src/images/profile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 115%;
 }
 .name {
   color: var(--main-color);
 }
-@media (max-width: 640px) {
+@media (max-width: 730px) {
+  h1,
+  h2 {
+    text-align: center;
+  }
   h1 {
-    font-size: 48px;
+    font-size: 96px;
     line-height: 1.5;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 36px;
+  }
+  .hero {
+    background-image: none;
+    padding-left: none;
+    padding-right: 15%;
   }
 }
