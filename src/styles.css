@@ -45,6 +45,7 @@ p {
 .overlay {
   position: absolute;
   display: flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
   align-items: center;
@@ -53,6 +54,21 @@ p {
   left: 0;
   opacity: 0;
   background-color: var(--highlight-color);
+  transition: ease-in-out 120ms;
+}
+.overlay p {
+  font-size: 28px;
+}
+.launch-button {
+  background-color: var(--main-background-color);
+  color: var(--brand-color);
+  opacity: 0.85;
+  transition: ease-in-out 120ms;
+}
+.launch-button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: var(--brand-color);
 }
 @media (max-width: 730px) {
   h1,
