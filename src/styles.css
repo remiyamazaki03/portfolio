@@ -1,7 +1,7 @@
 :root {
   --brand-color: orange;
   --secondary-color: white;
-  --background-color: black;
+  --main-background-color: black;
 }
 
 h1 {
@@ -20,7 +20,7 @@ p {
   padding-left: 60px;
 }
 .hero {
-  background-color: var(--background-color);
+  background-color: var(--main-background-color);
   color: var(--secondary-color);
   background-image: url(/src/images/profile.png);
   background-repeat: no-repeat;
@@ -32,7 +32,11 @@ p {
 }
 .about {
   background-color: var(--secondary-color);
-  color: var(--background-color);
+  color: var(--main-background-color);
+}
+.work {
+  background-color: var(--main-background-color);
+  color: var(--secondary-color);
 }
 @media (max-width: 730px) {
   h1,
