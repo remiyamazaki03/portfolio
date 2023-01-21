@@ -1,7 +1,8 @@
 :root {
-  --brand-color: orange;
-  --secondary-color: white;
-  --main-background-color: black;
+  --brand-color: rgb(255, 165, 0);
+  --secondary-color: rgb(255, 255, 255);
+  --main-background-color: rgb(0, 0, 0);
+  --highlight-color: rgba(255, 165, 0, 0.3);
 }
 
 h1 {
@@ -34,6 +35,24 @@ p {
 .about {
   background-color: var(--secondary-color);
   color: var(--main-background-color);
+}
+.work-img {
+  position: relative;
+}
+.work-img:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: var(--highlight-color);
 }
 @media (max-width: 730px) {
   h1,
