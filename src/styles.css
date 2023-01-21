@@ -12,11 +12,13 @@ h1 {
 h2 {
   font-size: 48px;
 }
-p {
+p,
+label {
   font-size: 36px;
 }
 .hero,
-.about {
+.about,
+.contact {
   height: 100vh;
   padding-top: 100px;
   padding-left: 60px;
@@ -35,6 +37,10 @@ p {
 .about {
   background-color: var(--secondary-color);
   color: var(--main-background-color);
+}
+.contact {
+  background-color: var(--main-background-color);
+  color: var(--secondary-color);
 }
 .work-img {
   position: relative;
@@ -70,25 +76,36 @@ p {
   background-color: var(--secondary-color);
   color: var(--brand-color);
 }
+.submit-button {
+  background-color: var(--brand-color);
+  color: var(--main-background-color);
+}
 @media (max-width: 730px) {
   h1,
   h2 {
     text-align: center;
   }
   h1 {
+    font-size: 48px;
+  }
+  .hero h1 {
     font-size: 96px;
     line-height: 1.5;
   }
-
   h2 {
     font-size: 36px;
   }
-  p {
+  p,
+  label {
     font-size: 26px;
   }
-  .hero {
+  .hero,
+  .contact {
     background-image: none;
     padding-left: none;
     padding-right: 15%;
+  }
+  textarea {
+    height: 3em;
   }
 }
