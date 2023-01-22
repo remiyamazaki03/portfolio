@@ -80,6 +80,15 @@ label {
   background-color: var(--brand-color);
   color: var(--main-background-color);
 }
+.github-logo {
+  color: white;
+  background-color: #86309f;
+  border: #86309f solid 7px;
+  border-radius: 50%;
+}
+.linkedin-logo {
+  color: #0c66c2;
+}
 @media (max-width: 730px) {
   h1,
   h2 {
