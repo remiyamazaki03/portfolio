@@ -92,6 +92,10 @@ footer {
 .linkedin-logo {
   color: #0c66c2;
 }
+#portfolio-rep-link:hover {
+  color: var(--brand-color);
+  font-weight: bold;
+}
 @media (max-width: 730px) {
   h1,
   h2 {
