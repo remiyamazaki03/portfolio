@@ -129,18 +129,23 @@ footer {
     padding-left: 0;
   }
   p {
-    font-size: 24px;
+    font-size: 16px;
   }
   label {
     font-size: 26px;
   }
-  .hero,
-  .contact {
+  .hero {
     background-image: none;
-    padding-left: none;
+    padding-right: 15%;
+  }
+  .contact {
+    padding-top: 35px;
     padding-right: 15%;
   }
   textarea {
     height: 3em;
+  }
+  footer {
+    height: fit-content;
   }
 }
