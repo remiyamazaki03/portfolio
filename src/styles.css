@@ -72,16 +72,29 @@ footer {
   background-color: var(--main-background-color);
   color: var(--brand-color);
   opacity: 0.85;
-  transition: ease-in-out 120ms;
+  transition: ease-in-out 100ms;
 }
 .launch-button:hover {
-  cursor: pointer;
   background-color: var(--secondary-color);
   color: var(--brand-color);
 }
 .submit-button {
   background-color: var(--brand-color);
   color: var(--main-background-color);
+}
+.linkedin-button {
+  background-color: var(--main-background-color);
+  color: var(--brand-color);
+  font-weight: bold;
+  max-width: fit-content;
+  display: block;
+  margin: 0 auto;
+  transition: ease-in-out 120ms;
+  text-decoration: none;
+}
+.linkedin-button:hover {
+  background-color: var(--highlight-color);
+  color: var(--brand-color);
 }
 .github-logo {
   color: white;
@@ -111,7 +124,13 @@ footer {
   h2 {
     font-size: 36px;
   }
-  p,
+  .about {
+    padding-top: 0;
+    padding-left: 0;
+  }
+  p {
+    font-size: 24px;
+  }
   label {
     font-size: 26px;
   }
