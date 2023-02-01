@@ -105,6 +105,9 @@ footer {
 .linkedin-logo {
   color: #0c66c2;
 }
+.navbar-css {
+  background-color: var(--secondary-color);
+}
 #portfolio-rep-link:hover {
   color: var(--brand-color);
   font-weight: bold;
